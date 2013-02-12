@@ -1,6 +1,0 @@
-#surefire
-#Tue Feb 12 14:26:09 CET 2013
-user.dir=C\:\\Users\\avenes\\workspace\\tests
-maven.repo.local=C\:\\Users\\avenes\\.m2\\repository
-localRepository=C\:\\Users\\avenes\\.m2\\repository
-basedir=C\:\\Users\\avenes\\workspace\\tests
