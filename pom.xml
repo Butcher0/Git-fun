@@ -5,7 +5,7 @@
 
 	<groupId>no.av</groupId>
 	<artifactId>tests</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<name>tests</name>
@@ -76,15 +76,7 @@
 			<name>SpringSource Milestones Proxy</name>
 			<url>https://oss.sonatype.org/content/repositories/springsource-milestones</url>
 		</repository>
-		<repository>
-			<id>my.mvn.repo</id>
-			<url>https://github.com/Butcher0/mvn-repo/raw/master</url>
-			<!-- use snapshot version -->
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-			</snapshots>
-		</repository>
+
 	</repositories>
 
 	<build>
@@ -99,7 +91,15 @@
 					<target>${java.version}</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+			</plugin>
 		</plugins>
 	</build>
-
+	<scm>
+		<connection>scm:git:git@github.com:Butcher0/Git-fun.git</connection>
+		<url>scm:git:git@github.com:Butcher0/Git-fun.git</url>
+		<developerConnection>scm:git:git@github.com:Butcher0/Git-fun.git</developerConnection>
+	</scm>
 </project>
