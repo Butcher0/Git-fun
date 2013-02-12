@@ -21,6 +21,7 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter{
 		resolver.setSuffix(".jsp");
 		System.out.println("endring");
 		System.out.println("not staged");
+		System.out.println("commit without staging");
 		return resolver;
 		
 	}
