@@ -91,4 +91,9 @@
 			</plugin>
 		</plugins>
 	</build>
+	<scm>
+	<connection>scm:git:git@github.com:Butcher0/Git-fun.git</connection>
+	<url>scm:git:git@github.com:Butcher0/Git-fun.git</url>
+	<developerConnection>scm:git:git@github.com:Butcher0/Git-fun.git</developerConnection>
+  </scm>
 </project>
