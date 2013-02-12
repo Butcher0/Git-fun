@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>no.av</groupId>
@@ -75,6 +76,15 @@
 			<name>SpringSource Milestones Proxy</name>
 			<url>https://oss.sonatype.org/content/repositories/springsource-milestones</url>
 		</repository>
+		<repository>
+			<id>my.mvn.repo</id>
+			<url>https://github.com/Butcher0/mvn-repo/raw/master</url>
+			<!-- use snapshot version -->
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
 	</repositories>
 
 	<build>
@@ -91,9 +101,5 @@
 			</plugin>
 		</plugins>
 	</build>
-	<scm>
-	<connection>scm:git:git@github.com:Butcher0/Git-fun.git</connection>
-	<url>scm:git:git@github.com:Butcher0/Git-fun.git</url>
-	<developerConnection>scm:git:git@github.com:Butcher0/Git-fun.git</developerConnection>
-  </scm>
+
 </project>
