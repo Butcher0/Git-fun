@@ -20,6 +20,7 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter{
 		resolver.setPrefix("/WEB-INF/views/");
 		resolver.setSuffix(".jsp");
 		System.out.println("endring");
+		System.out.println("endring igjen");
 		System.out.println("not staged");
 		System.out.println("commit without staging");
 		return resolver;
